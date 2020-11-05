@@ -406,7 +406,7 @@ img {
 }
 
 .hero {
-  background: url("./img/main/bluesheet.png") right bottom no-repeat;
+  background: url("../img/main/bluesheet.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 650px;
