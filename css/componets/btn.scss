@@ -23,7 +23,7 @@
         color: #fff;
         
         &:hover {
-            color: &darkGreen;
+            color: $darkGreen;
             background: #fff;
         }
     }
@@ -34,7 +34,7 @@
         text-transform: none;
         
         &:hover {
-            color: &darkGreen;
+            color: $darkGreen;
             
         }
     }

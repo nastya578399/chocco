@@ -1,10 +1,10 @@
 .reviews-section{
 
     position: relative;
-    background: url("/img/reviews/strawberry.png") right 5% top 1% no-repeat;
+    background: url("../img/reviews/strawberry.png") right 5% top 1% no-repeat;
     
     &:before {
-        content: url("/img/reviews/berries.png");
+        content: url("../img/reviews/berries.png");
         position: absolute;
         bottom: -80px;
         left: 0;
@@ -38,7 +38,7 @@
     display: flex;
     padding: 42px;
     &:before {
-        content: url("/img/reviews/pattern.png");
+        content: url("../img/reviews/pattern.png");
         position: absolute;
         bottom: 0;
         right: 0;
