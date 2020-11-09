@@ -1,9 +1,16 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+//breakpoints 
+
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $blue: #61c4d9;
 $darkGreen:#365A49;
+
+@import "media.scss";
 
 //z-indexes
 $z-fixed-menu: 100;
@@ -33,4 +40,5 @@ $z-fixed-menu: 100;
 @import "componets/form.scss";
 @import "componets/radio.scss";
 @import "componets/fixed-menu.scss";
+
 

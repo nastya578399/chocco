@@ -1,3 +1,13 @@
+html{
+    font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }
+}
 html,
 body{
     height: 100%;
@@ -15,13 +25,13 @@ body{
 .wrapper{
     position: relative;
     width: 100%;
-    min-width: $containerWidth +20px;
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
     position: relative;
 }
@@ -56,6 +66,16 @@ p{
 footer{
     position: relative;
     width: 100%;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones{
+        flex-direction: column;
+    }
 }
 
 *{

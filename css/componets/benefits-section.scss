@@ -2,10 +2,18 @@
     position: relative;
     background: url("../img/section/sheet.png") left top 57% no-repeat;
 
+    @include phones {
+        background: none;
+    }
+
     &:before {
         content: url("../img/section/decor.png");
         position: absolute;
-        bottom: -80px;
+        bottom: rem(-80px);
         left: 0;
+
+        @include phones {
+            display: none;
+        }
     }
 }

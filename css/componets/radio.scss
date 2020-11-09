@@ -22,21 +22,21 @@
 }
 
 .radio__visible{
-    width: 26px;
-    height: 26px;
+    width: rem(26px);
+    height: rem(26px);
     position: relative;
     border-radius: 50%;
     background: #fff;
 
     &:before {
         content: "";
-        width: 14px;
-        height: 14px;
+        width: rem(14px);
+        height: rem(14px);
         background: #365a49;
         border-radius: 50%;
         position: absolute;
         display: none;
-        top: 50%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%);
     }   

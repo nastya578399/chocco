@@ -1,14 +1,24 @@
 .hero {
-    background: url("../img/main/bluesheet.png") right bottom no-repeat;
+    background: url("../img/main/bluesheet.png") right bottom 88% no-repeat;
     background-color: $blue;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     color: #fff;
     position: relative;
 
+    @include tablets{
+        background-position: right bottom 88%;
+    }
+
+    &:before, &:after{
+        @include tablets{
+            display: none;
+        }
+    }
+
     &:before{
         position: absolute;
-        bottom: -40px;
+        bottom: rem(-40px);
         left: 2%;
         content: url("../img/main/csheet.png");
         
@@ -17,7 +27,7 @@
     &:after{
         content: url("../img/main/pattern.png");
         position: absolute;
-        bottom: -40px;
+        bottom: rem(-40px);
         right: 0;
     }
    
@@ -25,26 +35,62 @@
 
 .hero__title-section{
     width: 46%;
+
+    @include tablets{
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &:before{
+            content: "";
+            width: rem(316px);
+            height: rem(330px);
+            background:url(../img/main/candybar.png) center center / contain no-repeat ;
+            margin-bottom: rem(16px);
+        }
+    }
+}
+
+.hero__icons-section{
+    @include tablets {
+        display: none;
+    }
 }
 .hero__container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 0 45px;
+    padding: rem(24px) 0 rem(45px);
     background:  url("../img/main/candybar.png") right center / 50% auto no-repeat;
+
+    @include tablets{
+        background: none;
+    }
 }
 
 .hero__main-title{
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1.1;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
     text-transform: uppercase;
 }
 
 .hero__title-desk{
-    font-size: 21px;
-    margin-bottom: 28px;
+    font-size: rem(21px);
+    margin-bottom: rem(28px);
     padding-right: 10%;
+
+    @include tablets{
+        padding: 0 25%;
+    }
+
+    @include phones {
+        padding: 0 16%;
+    }
 }
