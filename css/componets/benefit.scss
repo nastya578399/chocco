@@ -16,6 +16,11 @@
     border-radius: 50%;
     overflow: hidden;
 
+    @include phones{
+        flex-shrink: 0;
+    }
+    
+
 }
 
 .benefit__icon{

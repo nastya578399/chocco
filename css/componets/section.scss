@@ -4,8 +4,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #ffffff;
-
     &--font-color--green{
         color: $darkGreen;
         background: url("../img/input/greenbackground.png");

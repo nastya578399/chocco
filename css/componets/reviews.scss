@@ -1,25 +1,32 @@
-.reviews-section{
+.reviews-section {
 
     position: relative;
-    background: url("../img/reviews/strawberry.png") right 5% top 1% no-repeat;
-    
+    background: url("../img/reviews/strawberry.png") right -9% top 0% no-repeat;
+
     &:before {
         content: url("../img/reviews/berries.png");
         position: absolute;
         bottom: rem(-80px);
         left: 0;
+
+        @include phones{
+            left: -36px;
+        }
+
+
     }
-    
+
 }
 
 
 
-.reviews__display{
+.reviews__display {
     background: #f8faf9;
     padding: 50 px rem(45px) rem(34px);
     margin-bottom: rem(20px);
     overflow: hidden;
     position: relative;
+
     &:before {
         content: "";
         display: block;
@@ -34,7 +41,7 @@
     }
 }
 
-.reviews__display-inner{
+.reviews__display-inner {
     display: flex;
     padding: rem(42px);
 
@@ -43,6 +50,7 @@
         text-align: center;
         align-items: center;
     }
+
     &:before {
         content: url("../img/reviews/pattern.png");
         position: absolute;
@@ -52,30 +60,41 @@
     }
 }
 
-.reviews__avatar{
+.reviews__avatar {
     width: rem(254px);
-    height: rem(260px); 
+    height: rem(260px);
 
     @include tablets {
-    width: rem(130px);
-    height: rem(132px);    
-    }   
-    
+        width: rem(130px);
+        height: rem(132px);
+    }
+
+    @include phones{
+        margin-bottom: 10%;
+    }
+
 }
 
-.reviews__avatar-img{
+.reviews__avatar-img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+
+    @include phones {
+        width: 45%;
+        height: 100%;
+        margin: auto;
+    }
+
 }
 
 
-.reviews__content{
+.reviews__content {
     flex: 1;
     margin-left: rem(20px);
 }
 
-.reviews__title{
+.reviews__title {
     font-size: rem(30px);
     font-weight: bold;
     margin-bottom: rem(22px);
@@ -83,12 +102,12 @@
 
 }
 
-.reviews__text{
+.reviews__text {
     margin-bottom: rem(36px);
 }
 
 
-.reviews__author{
+.reviews__author {
     font-size: rem(18px);
     font-weight: bold;
     color: black;
@@ -99,9 +118,10 @@
     justify-content: center;
 }
 
-.reviews__item{
+.reviews__item {
     margin-left: rem(6px);
-    &:first-child{
+
+    &:first-child {
         margin-left: 0;
     }
 }

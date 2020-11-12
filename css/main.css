@@ -342,7 +342,7 @@ html {
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 
@@ -401,9 +401,18 @@ p {
   margin: 0;
 }
 
+.map {
+  background: #ccc;
+}
+
 footer {
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
+  min-height: 64px;
+  padding: 1.2777777778rem 0;
+  background-color: #fff;
 }
 
 .footer__container {
@@ -431,21 +440,21 @@ img {
 }
 
 .hero {
-  background: url("../img/main/bluesheet.png") right bottom 88% no-repeat;
+  background: url("../img/main/bluesheet.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 36.1111111111rem;
   color: #fff;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-widh: 768px) {
   .hero {
-    background-position: right bottom 88%;
+    background: url("../img/main/bluesheet.png") right bottom no-repeat;
   }
 }
 @media screen and (max-width: 768px) {
-  .hero:before, .hero:after {
-    display: none;
+  .hero {
+    background-position: right bottom 88%;
   }
 }
 .hero:before {
@@ -454,11 +463,24 @@ img {
   left: 2%;
   content: url("../img/main/csheet.png");
 }
+@media screen and (max-width: 480px) {
+  .hero:before {
+    display: none;
+  }
+}
 .hero:after {
   content: url("../img/main/pattern.png");
   position: absolute;
   bottom: -2.2222222222rem;
-  right: 0;
+  right: 2%;
+}
+@media screen and (max-width: 480px) {
+  .hero:after {
+    content: "";
+    background-image: url("../img/main/pattern.png");
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .hero__title-section {
@@ -532,9 +554,8 @@ img {
   align-items: flex-start;
   justify-content: space-between;
 }
-
-@media screen and (max-width: 768px) {
-  .phone-number.header__phone-number {
+@media screen and (max-width: 480px) {
+  .header {
     display: none;
   }
 }
@@ -564,6 +585,11 @@ img {
   margin-right: 5rem;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .menu__list {
+    display: none;
+  }
 }
 
 .menu__item {
@@ -658,7 +684,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #ffffff;
 }
 .section--font-color--green {
   color: #365A49;
@@ -698,7 +723,7 @@ img {
 @media screen and (max-width: 480px) {
   .benefits__item {
     padding: 0;
-    margin-bottom: 1.0555555556rem;
+    margin-bottom: 2.7777777778rem;
   }
 }
 .benefits__item:before {
@@ -741,6 +766,11 @@ img {
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  .benefit__image-wrapper {
+    flex-shrink: 0;
+  }
 }
 
 .benefit__icon {
@@ -803,13 +833,18 @@ img {
 
 .reviews-section {
   position: relative;
-  background: url("../img/reviews/strawberry.png") right 5% top 1% no-repeat;
+  background: url("../img/reviews/strawberry.png") right -9% top 0% no-repeat;
 }
 .reviews-section:before {
   content: url("../img/reviews/berries.png");
   position: absolute;
   bottom: -4.4444444444rem;
   left: 0;
+}
+@media screen and (max-width: 480px) {
+  .reviews-section:before {
+    left: -36px;
+  }
 }
 
 .reviews__display {
@@ -861,11 +896,23 @@ img {
     height: 7.3333333333rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__avatar {
+    margin-bottom: 10%;
+  }
+}
 
 .reviews__avatar-img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .reviews__avatar-img {
+    width: 45%;
+    height: 100%;
+    margin: auto;
+  }
 }
 
 .reviews__content {
@@ -1007,6 +1054,13 @@ img {
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
+  align-items: center;
+  margin-right: 1.2222222222rem;
+}
+@media screen and (max-width: 480px) {
+  .radio {
+    margin-bottom: 0.5555555556rem;
+  }
 }
 .radio--checkbox {
   border-radius: 0;
@@ -1074,4 +1128,41 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.1111111111rem;
+  color: #010101;
+}
+@media screen and (max-width: 480px) {
+  .contacts {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contacts__phone {
+  color: #365A49;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials__item {
+  padding: 6px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
 }
