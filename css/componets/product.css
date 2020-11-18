@@ -1,0 +1,8 @@
+.product__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__col {
+  flex: 1;
+}

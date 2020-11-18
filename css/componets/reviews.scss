@@ -1,7 +1,11 @@
 .reviews-section {
 
     position: relative;
-    background: url("../img/reviews/strawberry.png") right -9% top 0% no-repeat;
+    background: url("../img/reviews/strawberry.png") right 8% top 3% no-repeat;
+
+    @include phones{
+     background: url("../img/reviews/strawberry.png") right -9% top 0% no-repeat;    
+    }
 
     &:before {
         content: url("../img/reviews/berries.png");
@@ -84,6 +88,7 @@
         width: 45%;
         height: 100%;
         margin: auto;
+        margin-bottom: 22px;
     }
 
 }
@@ -104,6 +109,7 @@
 
 .reviews__text {
     margin-bottom: rem(36px);
+    padding-right: rem(83px);
 }
 
 

@@ -1,0 +1,85 @@
+.section-best {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.best-title {
+   display: flex;
+   justify-content: center;
+   margin-bottom: rem(88px);
+
+}
+
+.section__title--black {
+
+    @include phones {
+        font-size: rem(45px);
+        margin-bottom: 0;
+    }
+}
+
+.best__text {
+    font-size: rem(72px);
+    font-family: 'gagalinregular';
+    font-weight: normal;
+}
+
+.best__produkts {
+    display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
+
+}
+
+.produkts__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    line-height: 1.42;
+    font-size: rem(16px);
+    padding: 0 rem(15px);
+
+    @include phones {
+        flex-direction: row;
+        margin-bottom: rem(70px);
+    }
+
+    @include phones {
+        margin-bottom: rem(15px);
+    }
+
+
+}
+
+.produkts__pic {
+    width: rem(100px);
+    height: rem(100px);
+
+}
+
+.produkts__title {
+    font-family: 'lifehack';
+    font-size: rem(24px);
+    margin-bottom: rem(20px);
+    font-weight: lighter;
+
+}
+
+.produkts__desc {
+    font-family: 'ubuntu';
+    font-weight: lighter;
+    font-size: rem(14px);
+    color: $black;
+
+    @include phones {
+        text-align: left;
+        margin-left: rem(25px);
+    }
+}

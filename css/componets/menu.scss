@@ -1,0 +1,91 @@
+.section-menu {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.accordeon-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-burger__list {
+    display: flex;
+    height: 100%;
+}
+
+.menu-burger__item {
+    display: flex;
+
+}
+
+.menu-burger__item--active {
+    .menu-burger__desc {
+        width: rem(540px);
+        transition: width .5s;
+
+        @include tablets {
+            width: 100%;
+            transition: width .5s;
+        }
+
+
+        @include phones {
+            width: 100%;
+            transition: width .5s;
+        }
+
+        @include phones {
+            width: 100%;
+            transition: width .5s;
+        }
+
+    }
+
+
+}
+
+.menu-burger__item--active {
+    .menu-burger__title {
+        color: $orange;
+    }
+}
+
+
+.menu-burger__trigger {
+    width: rem(80px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: center top no-repeat/cover;
+}
+
+.menu-burger__title {
+    font-size: rem(40px);
+    font-family: 'gagalinregular';
+    font-weight: normal;
+    color: $main;
+    transform: rotate(270deg);
+    display: block;
+    white-space: nowrap;
+}
+
+.menu-burger__desc {
+    background-color: $black;
+    opacity: 0.929;
+    width: 0;
+    overflow: hidden;
+}
+
+.menu-burger__desc p {
+    color: $main;
+    font-size: rem(14px);
+    padding-top: rem(60px);
+    padding-left: rem(33px);
+    line-height: rem(24px);
+}

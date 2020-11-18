@@ -1,0 +1,139 @@
+.button_container {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity 0.25s ease;
+}
+
+.button_container.button_container--active {
+  opacity: 0.7;
+}
+
+.button_container.button_container--active .button_container--top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  border-radius: 5px;
+}
+
+.button_container.button_container--active .button_container--middle {
+  opacity: 0;
+}
+
+.button_container.button_container--active .button_container--bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  border-radius: 5px;
+}
+
+.button_container .button_container__item {
+  background: #fff;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.button_container .button_container__item:nth-of-type(2) {
+  top: 11px;
+}
+
+.button_container .button_container__item:nth-of-type(3) {
+  top: 22px;
+}
+
+.overlay {
+  position: fixed;
+  background: #2e3133;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+}
+
+.overlay.overlay--open {
+  opacity: 0.99;
+  visibility: visible;
+  height: 100%;
+}
+
+.overlay.overlay--open .overlay-menu__item {
+  animation: fadeInRight 0.5s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.overlay-menu {
+  position: absolute;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-family: "Vollkorn", serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.overlay-menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.overlay-menu__item {
+  display: block;
+  position: relative;
+  line-height: 1;
+  opacity: 0;
+}
+
+.overlay-menu__item:after {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.overlay-menu__item:last-child:after {
+  display: none;
+}
+
+.overlay-menu__link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+.body-active-menu {
+  overflow: hidden;
+}
+
+.btn-close {
+  color: #fff;
+  font-size: 24px;
+  font-family: Helvetica;
+}

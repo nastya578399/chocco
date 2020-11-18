@@ -1,4 +1,4 @@
-$containerWidth: 940px;
+$containerWidth: 1100px;
 $baseFontSize: 18px;
 
 //breakpoints 
@@ -9,6 +9,10 @@ $phones: 480px;
 //colors
 $blue: #61c4d9;
 $darkGreen:#365A49;
+$black: #2f3234;
+$orange: #f9b43b;
+$main: #fff;
+$accent: #ea7656;
 
 @import "media.scss";
 
@@ -43,5 +47,11 @@ $z-fixed-menu: 100;
 @import "componets/contacts.scss";
 @import "componets/socials.scss";
 @import "componets/icon.scss";
-
+@import "componets/gamburger.scss";
+@import "componets/product.scss";
+@import "componets/slider.scss";
+@import "componets/maxin.scss";
+@import "componets/best.scss";
+@import "componets/menu.scss";
+@import "componets/overlay.scss";
 

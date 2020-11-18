@@ -1,0 +1,74 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.875rem;
+    z-index: 20;
+}
+
+.slider__btn--next {
+    right: -1.25rem;
+    transform: rotate(-90deg);
+}
+
+.slider__btn--prev {
+    left: -1.25rem;
+    transform: rotate(90deg);
+}
+
+.slider__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+    background-image: url("./img/products/candybar.png");
+}
+
+.slider__title{
+    font-weight: bold;
+    font-size: 36px;
+    color: #292929;
+    padding: 30px 0px;
+    max-width: 374px;
+}
+
+.slider__price-amount{
+    font-size: 60px;
+    font: "Alegreya Sans";
+    color: #292929;
+}
+
+.slider__left, .slider__right {
+    width: 50%;
+}
+
+
+.slider__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.slider__row{
+    display: flex;
+    max-width: 304px;
+}
+
+.slider__price{
+    margin: auto;
+}
+
+.slider__pic{
+    max-width: 100%;
+}
+
+.slider__desc{
+    max-width: 368px;
+}
