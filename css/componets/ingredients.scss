@@ -1,0 +1,30 @@
+.ingredients {
+    position: relative;
+    width: 91px;
+    height: 91px;
+    background:#86C3D7;
+    text-align: center;
+    padding: 12px;
+}
+
+.ingredients:hover .composition{
+    left: 100%;
+    opacity: 1;
+}
+
+.composition{
+    width: 273px;
+    height: 344px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0%;
+    left: -99999px;
+    opacity: 0;
+    transition: 0,3s;
+}
+
+.composition__item{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}

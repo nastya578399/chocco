@@ -20,6 +20,7 @@
         right: 3%;
 
         @include tablets {
+            display: none;
             content: "";
             background-image: url("../img/products/berriesproduct.png");
             background-repeat: no-repeat;

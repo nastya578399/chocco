@@ -704,6 +704,14 @@ img {
   color: #365A49;
   background: #fff;
 }
+.btn--theme--green--all {
+  background: #365A49;
+  color: #fff;
+}
+.btn--theme--green--all:hover {
+  color: #fff;
+  background: #365A49;
+}
 .btn--theme--transparent {
   background: transparent;
   color: #000;
@@ -1238,6 +1246,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .product__container:after {
+    display: none;
     content: "";
     background-image: url("../img/products/berriesproduct.png");
     background-repeat: no-repeat;
@@ -1513,6 +1522,7 @@ img {
 }
 
 .button_container {
+  display: none;
   position: absolute;
   top: 5%;
   right: 2%;
@@ -1521,6 +1531,11 @@ img {
   cursor: pointer;
   z-index: 100;
   transition: opacity 0.25s ease;
+}
+@media screen and (max-width: 768px) {
+  .button_container {
+    display: block;
+  }
 }
 
 .button_container.button_container--active {
@@ -1651,4 +1666,47 @@ img {
   color: #fff;
   font-size: 24px;
   font-family: Helvetica;
+}
+
+.click__img {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  margin: 23px;
+}
+
+.click__text {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 14.0121px;
+  line-height: 17px;
+}
+
+.ingredients {
+  position: relative;
+  width: 91px;
+  height: 91px;
+  background: #86C3D7;
+}
+
+.ingredients:hover .composition {
+  left: 100%;
+  opacity: 1;
+}
+
+.composition {
+  width: 273px;
+  height: 344px;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0%;
+  left: -99999px;
+  opacity: 0;
+  transition: 0, 3s;
+}
+
+.composition__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
 }

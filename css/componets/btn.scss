@@ -29,6 +29,16 @@
         }
     }
 
+    &--theme--green--all {
+        background: $darkGreen;
+        color: #fff;
+        
+        &:hover {
+            color: #fff;
+            background: $darkGreen;
+        }
+    }
+
     &--theme--transparent {
         background: transparent;
         color: #000;
