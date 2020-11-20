@@ -27,7 +27,9 @@
     align-items: center;
     transition: transform 0.3s;
     background-image: url("./img/products/candybar.png");
+    
 }
+    
 
 .slider__title{
     font-weight: bold;
@@ -35,6 +37,11 @@
     color: #292929;
     padding: 30px 0px;
     max-width: 374px;
+
+    @include tablets {
+        width: 452px;
+        text-align: center
+    }
 }
 
 .slider__price-amount{
@@ -45,6 +52,13 @@
 
 .slider__left, .slider__right {
     width: 50%;
+    @include tablets{
+        width: 100%;
+    }
+
+    @include phones{
+        width: 50%;
+    }
 }
 
 
@@ -54,6 +68,9 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    @include tablets{
+        flex-direction: column
+    }
 }
 
 .slider__row{
@@ -71,4 +88,9 @@
 
 .slider__desc{
     max-width: 368px;
+
+    @include tablets {
+        width: 528px;
+        text-align: center
+    }
 }

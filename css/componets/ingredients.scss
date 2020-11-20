@@ -5,6 +5,10 @@
     background:#86C3D7;
     text-align: center;
     padding: 12px;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .ingredients:hover .composition{

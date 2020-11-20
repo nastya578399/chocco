@@ -33,9 +33,7 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    @media screen and (max-width: $phones) {
-        display: none;
-    }
+    
 
 }
 
@@ -64,4 +62,5 @@
     width: rem(12px);
     height: rem(12px);
     margin-right: rem(6px);
+}
 }
