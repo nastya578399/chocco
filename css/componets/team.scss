@@ -1,0 +1,39 @@
+.team--version--mobile{
+    display: none;
+}
+
+.team--version--dekstor{
+    display: flex;
+    justify-content: center;
+    justify-content:space-between;
+    max-width: 970px;
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.team__item-text{
+    max-width: 200px;
+    font-size: 21px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.team__item--img{
+    margin-bottom: 20px;
+}
+
+.team__content{
+    overflow: hidden;
+    height: 0;
+}
+
+.team__buttom{
+    width: 0;
+    height: 0;
+    border-top: 9px solid green;
+    border-left: 4.5px solid transparent;
+    border-right: 4.5px solid transparent;
+}

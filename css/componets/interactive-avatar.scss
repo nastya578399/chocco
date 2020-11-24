@@ -1,18 +1,6 @@
-.interective-avatar{
-    width: rem(80px);
-    height: rem(80px);
-    //border: rem(6px) solid #0f5a47;
-    border: rem(6px) solid transparent;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
 
-    &--active{
-        border: rem(6px) solid #0f5a47;
-    }
-}
 
-.interective-avatar__link{
+.reviews__switcher-link{
     position: absolute;
     top: 0;
     left: 0;
@@ -21,7 +9,7 @@
     display: block;
 }
 
-.interective-avatar__img{
+.reviews__switcher-img{
     display: block;
     width: 100%;
     height: 100%;

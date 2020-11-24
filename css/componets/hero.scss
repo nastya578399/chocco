@@ -1,7 +1,7 @@
 .hero {
     background: url("../img/main/bluesheet.png") right bottom no-repeat;
     background-color: $blue;
-    height: 100vh;
+    height: 100%;
     min-height: rem(650px);
     color: #fff;
     position: relative;
@@ -14,12 +14,12 @@
 
     @include tablets {
         background-position: right bottom 88%;
-        height: 100vh;
+        height: 100%;
     }
 
     @include phones {
         background-position: right bottom 88%;
-        height: 80vh;
+        height: 100%;
     }
 
 

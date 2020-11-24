@@ -79,6 +79,12 @@
 
 }
 
+.interective-avatar--active{
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
+}
+
 .reviews__avatar-img {
     object-fit: cover;
     width: 100%;
@@ -122,12 +128,35 @@
 .reviews__switcher {
     display: flex;
     justify-content: center;
+    min-height: 280px;
 }
 
-.reviews__item {
+.reviews__switcher-item {
     margin-left: rem(6px);
 
     &:first-child {
         margin-left: 0;
+    }
+}
+
+.reviews__display--vadim{
+    display: none;
+}
+
+.reviews__display--marina{
+    display: none;
+}
+
+.reviews__switcher-item{
+    width: rem(80px);
+    height: rem(80px);
+    //border: rem(6px) solid #0f5a47;
+    border: rem(6px) solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    &--active{
+        border: rem(6px) solid #0f5a47;
     }
 }
