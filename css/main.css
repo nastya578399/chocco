@@ -535,10 +535,10 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 90%;
-  height: 75%;
+  width: 100%;
+  height: 100%;
   padding: 1.3333333333rem 0 2.5rem;
-  background: url("../img/main/candybar.png") right center/contain no-repeat;
+  background: url("../img/main/candybar.png") right center/auto no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
@@ -881,10 +881,14 @@ img {
 
 .reviews__display {
   background: #f8faf9;
-  padding: 50 px 2.5rem 1.8888888889rem;
+  padding: 2.7777777778rem 2.5rem 1.8888888889rem;
   margin-bottom: 1.1111111111rem;
   overflow: hidden;
   position: relative;
+  display: none;
+}
+.reviews__display--active {
+  display: block;
 }
 .reviews__display:before {
   content: "";
@@ -1378,6 +1382,10 @@ img {
   }
 }
 
+.bx-next {
+  background: url(/chocco/img/products/arrow_l.png) no-repeat -43px -32px;
+}
+
 .section-best {
   position: relative;
   align-items: center;
@@ -1742,8 +1750,19 @@ img {
   margin: 30px;
 }
 
+.team {
+  justify-content: space-between;
+}
+
 .team--version--mobile {
   display: none;
+}
+@media screen and (max-width: 768px) {
+  .team--version--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .team--version--dekstor {
@@ -1759,6 +1778,8 @@ img {
 }
 
 .team__item-text {
+  display: flex;
+  align-items: center;
   max-width: 200px;
   font-size: 21px;
   color: black;
@@ -1769,16 +1790,30 @@ img {
 .team__item--img {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  .team__item--img {
+    overflow: hidden;
+    height: 0;
+  }
+  .team__item--img--active {
+    height: 272px;
+  }
+}
 
 .team__content {
   overflow: hidden;
   height: 0;
+  position: absolute;
+  max-width: 220px;
+  transition: 0.3s;
 }
 
-.team__buttom {
+.team__item-text:after {
+  content: "";
   width: 0;
   height: 0;
   border-top: 9px solid green;
   border-left: 4.5px solid transparent;
   border-right: 4.5px solid transparent;
+  margin-left: 10px;
 }

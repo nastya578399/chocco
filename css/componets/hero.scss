@@ -104,10 +104,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 90%;
-    height: 75%;
+    width: 100%;
+    height: 100%;
     padding: rem(24px) 0 rem(45px);
-    background: url("../img/main/candybar.png") right center / contain no-repeat;
+    background: url("../img/main/candybar.png") right center /auto no-repeat;
 
     @include tablets{
         background-size: 70%;

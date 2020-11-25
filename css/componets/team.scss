@@ -1,5 +1,16 @@
+.team{
+    justify-content: space-between;
+}
+
 .team--version--mobile{
     display: none;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+    }
 }
 
 .team--version--dekstor{
@@ -14,6 +25,8 @@
 }
 
 .team__item-text{
+    display: flex;
+    align-items: center;
     max-width: 200px;
     font-size: 21px;
     color: black;
@@ -23,17 +36,31 @@
 
 .team__item--img{
     margin-bottom: 20px;
+
+    @include tablets{
+        overflow: hidden;
+        height: 0;
+
+        &--active{
+            height: 272px;
+        }
+    }
 }
 
 .team__content{
     overflow: hidden;
     height: 0;
+    position: absolute;
+    max-width: 220px;
+    transition: .3s;
 }
 
-.team__buttom{
+.team__item-text:after{
+    content: "";
     width: 0;
     height: 0;
     border-top: 9px solid green;
     border-left: 4.5px solid transparent;
     border-right: 4.5px solid transparent;
+    margin-left: 10px;
 }

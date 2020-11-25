@@ -1,1 +1,1 @@
-$('.products').bxSlider();
+$('.slider__list').bxSlider();

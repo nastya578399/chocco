@@ -26,10 +26,14 @@
 
 .reviews__display {
     background: #f8faf9;
-    padding: 50 px rem(45px) rem(34px);
+    padding: rem(50px) rem(45px) rem(34px);
     margin-bottom: rem(20px);
     overflow: hidden;
     position: relative;
+    display: none;
+    &--active{
+        display: block;
+    }
 
     &:before {
         content: "";
