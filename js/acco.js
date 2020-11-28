@@ -3,9 +3,10 @@ const openItem = item => {
     const contentBlock = container.find(".team__content");
     const textBlock = contentBlock.find(".team__content-block");
     const reqHeight = textBlock.height();
-
-    container.addcClass("active")
+    const teamMember = container.find(".team__item--img");
+    container.addClass("active");
     contentBlock.height(reqHeight);
+    teamMember.height(teamMember.height());
 }
 
 
