@@ -30,6 +30,7 @@
     margin-bottom: rem(20px);
     overflow: hidden;
     position: relative;
+    top: 55px;
     display: none;
     &--active{
         display: block;
@@ -133,6 +134,8 @@
     display: flex;
     justify-content: center;
     min-height: 280px;
+    position: relative;
+    top: 50px;
 }
 
 .reviews__switcher-item {

@@ -7,7 +7,10 @@
   <title>CHOCCO</title>
   <link rel="stylesheet" 
    href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" 
+  href="./css/main.css">
 </head>
 
 <body>
@@ -449,6 +452,50 @@
           </ul>
         </div>
       </section>
+      <div class="section products-menu-section">
+        <h1 class="section__title products-menu-section__title">Меню</h1>
+        <ul class="products-menu">
+          <li class="products-menu__item">
+            <a href="#" class="products-menu__title">
+              <img src="/img/products-menu/slide.png" alt="">
+            </a>
+            <div class="products-menu__content">
+              <div class="products-menu__container">
+                <button class="products-menu__close" type="button">
+                  <img
+                  class="products-menu__close-icon"
+                  src="#" />
+                </button>
+                <div class="products-menu__content-text">
+                  Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.  Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="products-menu__item">
+            <a href="#" class="products-menu__title">
+              <img src="/img/products-menu/slid.png" alt="">
+            </a>
+            <div class="products-menu__content">
+              <div class="products-menu__container">
+                <button class="products-menu__close" type="button"></button>
+                <div class="products-menu__content-text"></div>
+              </div>
+            </div>
+          </li>
+          <li class="products-menu__item">
+            <a href="#" class="products-menu__title">
+              <img src="/img/products-menu/sli.png" alt="">
+            </a>
+            <div class="products-menu__content">
+              <div class="products-menu__container">
+                <button class="products-menu__close" type="button"></button>
+                <div class="products-menu__content-text"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
       <section class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
@@ -478,15 +525,13 @@
                     <img src="./img/reviews/vadim.png" alt="" class="reviews__avatar-img">
                   </div>
                   <article class="reviews__content">
-                    <h3 class="reviews__title">Лучший перекус</h3>
+                    <h3 class="reviews__title">Идеально подходят для спортсменов</h3>
                     <div class="reviews__text">
                       <p>
-                        Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за
-                        компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он
-                        всегда под рукой. Это приятно и удобно.
+                        После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт. 
                       </p>
                     </div>
-                    <div class="reviews__author">Алёна Хмельницкая</div>
+                    <div class="reviews__author">Вадим Грачев</div>
                   </article>
                 </div>
             </li>
@@ -496,15 +541,13 @@
                   <img src="./img/reviews/marina.png" alt="" class="reviews__avatar-img">
                 </div>
                 <article class="reviews__content">
-                  <h3 class="reviews__title">Лучший перекус</h3>
+                  <h3 class="reviews__title">Лучшие батончики премиум уровня</h3>
                   <div class="reviews__text">
                     <p>
-                      Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за
-                      компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он
-                      всегда под рукой. Это приятно и удобно.
+                      Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.
                     </p>
                   </div>
-                  <div class="reviews__author">Алёна Хмельницкая</div>
+                  <div class="reviews__author">Мария Орлова</div>
                 </article>
               </div>
           </li>
@@ -535,41 +578,42 @@
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
           <form class="form">
+            <input type="hidden" name="to" value="somewhere@mail.com">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="name" class="form__input input-error">
                 </label>
 
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="phone" class="form__input input-error">
                 </label>
 
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Улица</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="street" class="form__input">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Дом</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="home" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Корпус</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="part" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Квартира</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="apartment" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Этаж</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="floor" class="form__input">
                 </label>
 
               </div>
@@ -581,7 +625,7 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Коменнтарий</div>
-                  <textarea class="form__input"></textarea>
+                  <textarea name="comment" class="form__input input-error"></textarea>
                 </label>
               </div>
               <div class="form__row">
@@ -607,10 +651,13 @@
                 </div>
               </div>
             </div>
+
           </form>
         </div>
       </section>
-      <section class="section map">
+      <section class="section map-section">
+        <div id="map" class="map"></div>
+      </section>
         <footer class="footer">
           <div class="container footer__container">
             <address class="contacts">
@@ -657,7 +704,8 @@
             </ul>
           </div>
         </footer>
-      </section>
+      
+      
 
 
     </div>
@@ -693,12 +741,28 @@
       </li>
     </ul>
   </nav>
+  <div id="modal" class="modal">
+    <div class="modal__container">
+      <div class="modal__content">
+        Сообщение отправлено
+      </div>
+      <div class="modal__button-container">
+        <a href="#" class="btn app-close-modal btn--theme--green">Закрыть</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/tabs.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/acco.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu-acco.js"></script>
+  <script src="./js/map.js"></script>
 </body>
 
 </html>

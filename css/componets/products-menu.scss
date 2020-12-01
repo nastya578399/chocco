@@ -1,0 +1,35 @@
+.products-menu-section{
+   background: url(/img/products-menu/slider.png) center center/cover no-repeat;
+   position: relative;
+   color: #fff;
+   height: 648px;
+}
+
+
+.products-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+
+
+.products-menu__item{
+    display: flex;
+}
+
+.products-menu__content{
+    background: rgba(47, 50, 52, 0.9);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+}
+
+.products-menu-section__title{
+    color: white;
+    position: relative;
+    right: 34%;
+    top: -32%;
+}

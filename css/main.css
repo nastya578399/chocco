@@ -368,7 +368,7 @@ body {
 }
 
 .container {
-  width: 95%;
+  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   position: relative;
@@ -726,10 +726,13 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #000;
+  position: relative;
+  top: 50px;
 }
 
 .headline__title {
-  margin-bottom: 1.3888888889rem;
+  position: relative;
+  top: 50px;
 }
 
 .benefits {
@@ -825,7 +828,7 @@ img {
 }
 
 .headline__title {
-  margin-bottom: 0.3888888889rem;
+  margin-bottom: 2.7777777778rem;
 }
 
 .headline__subtitle {
@@ -885,6 +888,7 @@ img {
   margin-bottom: 1.1111111111rem;
   overflow: hidden;
   position: relative;
+  top: 55px;
   display: none;
 }
 .reviews__display--active {
@@ -985,6 +989,8 @@ img {
   display: flex;
   justify-content: center;
   min-height: 280px;
+  position: relative;
+  top: 50px;
 }
 
 .reviews__switcher-item {
@@ -1085,6 +1091,10 @@ img {
 .form__input:focus {
   border-color: #dee2bd;
   outline: none;
+}
+
+.input-error {
+  border-color: hotpink;
 }
 
 .form__controls {
@@ -1392,16 +1402,17 @@ img {
   display: block;
   position: absolute;
   top: 50%;
+  z-index: 2;
 }
 
 .product-slider__arrow--derection--next {
-  background: url(/chocco/img/products/arrow_r.png) center center no-repeat;
+  background: url(./img/products/arrow_r.png) center center no-repeat;
   width: 111.1111111111rem;
   height: 0.8333333333rem;
 }
 
 .product-slider__arrow--derection--prev {
-  background: url(/chocco/img/products/arrow_l.png) center center no-repeat;
+  background: url(./img/products/arrow_r.png) center center no-repeat;
   width: 1.6666666667rem;
   height: 0.8333333333rem;
 }
@@ -1836,4 +1847,70 @@ img {
   border-left: 4.5px solid transparent;
   border-right: 4.5px solid transparent;
   margin-left: 10px;
+}
+
+.modal {
+  display: none;
+}
+.modal.error-modal .modal__content {
+  color: red;
+}
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+.modal .fancybox-button {
+  display: none;
+}
+
+.modal__container {
+  background: #fff;
+  padding: 35px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  margin-buttom: 15px;
+  color: #000;
+}
+
+.products-menu-section {
+  background: url(/img/products-menu/slider.png) center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+  height: 648px;
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.products-menu__item {
+  display: flex;
+}
+
+.products-menu__content {
+  background: rgba(47, 50, 52, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.7s;
+}
+
+.products-menu-section__title {
+  color: white;
+  position: relative;
+  right: 34%;
+  top: -32%;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }

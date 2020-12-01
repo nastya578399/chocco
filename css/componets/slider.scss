@@ -106,17 +106,18 @@
     display: block;
     position: absolute;
     top:50%;
+    z-index: 2;
 }
 
 .product-slider__arrow--derection--next{
-    background: url(/chocco/img/products/arrow_r.png) center center no-repeat;
+    background: url(./img/products/arrow_r.png) center center no-repeat;
     width: rem(2000px);
     height: rem(15px);
 }
 
 
 .product-slider__arrow--derection--prev{
-    background: url(/chocco/img/products/arrow_l.png) center center no-repeat;
+    background: url(./img/products/arrow_r.png) center center no-repeat;
     width: rem(30px);
     height: rem(15px);
 }
