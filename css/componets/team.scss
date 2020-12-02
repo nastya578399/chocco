@@ -27,11 +27,11 @@
 .team__item-text{
     display: flex;
     align-items: center;
-    max-width: 200px;
     font-size: 21px;
     color: black;
     font-weight: bold;
     text-align: center;
+    justify-content: center;
 }
 
 .team__item--img{
@@ -53,6 +53,10 @@
     position: absolute;
     max-width: 220px;
     transition: .3s;
+
+    @include tablets{
+        position: static;
+    }
 }
 
 .team__item-text:after{
@@ -63,4 +67,8 @@
     border-left: 4.5px solid transparent;
     border-right: 4.5px solid transparent;
     margin-left: 10px;
+}
+
+.team__content-block{
+    text-align: center;
 }

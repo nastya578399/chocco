@@ -17,7 +17,7 @@
 .section__title{
     font-size: rem(48px);
     font-weight: bold;
-    margin-bottom: rem(60px);
+    margin-bottom: rem(100px);
     text-align: center;
     text-transform: uppercase;
     color: #000;
@@ -28,6 +28,12 @@
 
 .headline__title{
     position: relative;
-    top: 50px;
+    top: 24px;
+    margin-bottom: 50px;
+}
+
+.reviews__headline{
+    position: relative;
+    margin-bottom: 7px;
 }
 
