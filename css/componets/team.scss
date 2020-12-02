@@ -2,6 +2,10 @@
     justify-content: space-between;
 }
 
+.team__content-title{
+    color: black;
+}
+
 .team--version--mobile{
     display: none;
 
@@ -32,19 +36,20 @@
     font-weight: bold;
     text-align: center;
     justify-content: center;
+    margin-bottom: 25px;
 }
 
 .team__item--img{
     margin-bottom: 20px;
 
-    @include tablets{
-        overflow: hidden;
-        height: 0;
+    // @include tablets{
+    //     overflow: hidden;
+    //     height: 0;
 
-        &--active{
-            height: 272px;
-        }
-    }
+    //     &--active{
+    //         height: 272px;
+    //     }
+    // }
 }
 
 .team__content{

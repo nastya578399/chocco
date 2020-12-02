@@ -341,7 +341,7 @@
               </div>
               <div class="team__content">
                 <div class="team__content-block">
-                  <h2>Оператор</h2>
+                  <h2 class="team__content-title">Оператор</h2>
                   Отвечает за вкусовые качества 
                   и калорийность.
                   </div>
@@ -355,7 +355,7 @@
               </div>
               <div class="team__content">
                 <div class="team__content-block">
-                  <h2>Оператор</h2>
+                  <h2 class="team__content-title">Оператор</h2>
                   Отвечает за вкусовые качества 
                   и калорийность.
                   </div>
@@ -369,7 +369,7 @@
               </div>
               <div class="team__content">
                 <div class="team__content-block">
-                  <h2>Оператор</h2>
+                  <h2 class="team__content-title">Оператор</h2>
                   Отвечает за вкусовые качества 
                   и калорийность.
                   </div>
@@ -383,7 +383,7 @@
               </div>
               <div class="team__content">
                 <div class="team__content-block">
-                  <h2>Оператор</h2>
+                  <h2 class="team__content-title">Оператор</h2>
                   Отвечает за вкусовые качества 
                   и калорийность.
                   </div>
@@ -396,13 +396,13 @@
             <li class="team__item ">
               <div class="team__member">
                 <div class="team__item-text">Борис Фёдорович</div>
-                <img src="./img/team/boris.png" alt="" class="team__item--img">
               </div>
               <div class="team__content">
                 <div class="team__content-block">
-                  <h2>Оператор</h2>
+                  <h2 class="team__content-title">Оператор</h2>
                   Отвечает за вкусовые качества 
                   и калорийность.
+                  <img src="./img/team/boris.png" alt="" class="team__item--img">
                   </div>
               </div>
               
@@ -410,13 +410,13 @@
             <li class="team__item">
               <div class="team__member">
                 <div class="team__item-text">Алла Иванова</div>
-                <img src="./img/team/alla.png" alt="" class="team__item--img">
               </div>
               <div class="team__content">
                 <div class="team__content-block">
-                  <h2>Оператор</h2>
+                  <h2 class="team__content-title" >Оператор</h2>
                   Отвечает за вкусовые качества 
                   и калорийность.
+                  <img src="./img/team/alla.png" alt="" class="team__item--img">
                   </div>
               </div>
               
@@ -424,13 +424,13 @@
             <li class="team__item">
               <div class="team__member">
                 <div class="team__item-text">Кирилл Матросов</div>
-                <img src="./img/team/kirill.png" alt="" class="team__item--img">
               </div>
               <div class="team__content">
                 <div class="team__content-block">
-                  <h2>Оператор</h2>
+                  <h2 class="team__content-title">Оператор</h2>
                   Отвечает за вкусовые качества 
                   и калорийность.
+                  <img src="./img/team/kirill.png" alt="" class="team__item--img">
                   </div>
               </div>
               
@@ -438,13 +438,13 @@
             <li class="team__item team__item--active">
               <div class="team__member">
                 <div class="team__item-text">Мила Рыжкова</div>
-                <img src="./img/team/mila.png" alt="" class="team__item--img">
               </div>
               <div class="team__content">
                 <div class="team__content-block">
-                  <h2>Оператор</h2>
+                  <h2 class="team__content-title">Оператор</h2>
                   Отвечает за вкусовые качества 
                   и калорийность.
+                  <img src="./img/team/mila.png" alt="" class="team__item--img">
                   </div>
               </div>
               
@@ -574,6 +574,29 @@
 
 
       </section>
+      <secction class="section player-section">
+        <div class="container">
+          <h2 class="section__title">Как мы работаем</h2>
+          <div class="player-section__container">
+            <div class="player active">
+              <div class="player__wrapper">
+                 <div id="yt-player" class="player__elem"></div>
+                 <div class="player__splash"></div>
+               </div>
+               <div class="player__controls">
+                 <button class="player__start"></button>
+                 <div class="player__playback">
+                 <button class="player__playback-button"></button>
+               </div>
+               <div class="player__duration">
+                 <span class="player__duration-completed">0:00</span> :
+                 <span class="player__duration-estimate">0:00</span>
+               </div>
+             </div>
+           </div>
+          </div>
+        </div>
+      </secction>
       <section class="section order-section section--font-color--green">
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
@@ -583,12 +606,12 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" name="name" class="form__input input-error">
+                  <input type="text" name="name" class="form__input ">
                 </label>
 
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" name="phone" class="form__input input-error">
+                  <input type="text" name="phone" class="form__input ">
                 </label>
 
               </div>
@@ -625,7 +648,7 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Коменнтарий</div>
-                  <textarea name="comment" class="form__input input-error"></textarea>
+                  <textarea name="comment" class="form__input"></textarea>
                 </label>
               </div>
               <div class="form__row">
