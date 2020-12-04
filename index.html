@@ -452,50 +452,23 @@
           </ul>
         </div>
       </section>
-      <div class="section products-menu-section">
+      <section class="section products-menu-section">
         <h1 class="section__title products-menu-section__title">Меню</h1>
         <ul class="products-menu">
           <li class="products-menu__item">
-            <a href="#" class="products-menu__title">
-              <img src="/img/products-menu/slide.png" class="products-menu__title-img" alt="">
-            </a>
-            <div class="products-menu__content">
-              <div class="products-menu__container">
-                <button class="products-menu__close" type="button">
-                  <img
-                  class="products-menu__close-icon"
-                  src="#" />
-                </button>
-                <div class="products-menu__content-text">
-                  Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее.  Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
-                </div>
+            <a class="products-menu__trigger" href="#" style="background-image: url('./img/products-menu/slide.png')">
+              <div class="products-menu__trigger-text">Ботончики с молоком</div></a>
+              <div class="products-menu__content" style="width: 550px;">
+                <p class="products-menu__text">
+                  Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.<a class="close-btn" href="#">
+                    <!-- <svg class="close-btn__icon close-btn__icon_color_white">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/img/icon/sprite.svg#close"></use>
+                    </svg></a> -->
+                </p>
               </div>
-            </div>
-          </li>
-          <li class="products-menu__item">
-            <a href="#" class="products-menu__title">
-              <img src="/img/products-menu/slid.png" class="products-menu__title-img" alt="">
-            </a>
-            <div class="products-menu__content">
-              <div class="products-menu__container">
-                <button class="products-menu__close" type="button"></button>
-                <div class="products-menu__content-text"></div>
-              </div>
-            </div>
-          </li>
-          <li class="products-menu__item">
-            <a href="#" class="products-menu__title">
-              <img src="/img/products-menu/sli.png" class="products-menu__title-img" alt="">
-            </a>
-            <div class="products-menu__content">
-              <div class="products-menu__container">
-                <button class="products-menu__close" type="button"></button>
-                <div class="products-menu__content-text"></div>
-              </div>
-            </div>
           </li>
         </ul>
-      </div>
+      </section>
       <section class="section reviews-section">
         <div class="container">
           <h2 class="section__title reviews__headline">Отзывы</h2>
@@ -574,29 +547,29 @@
 
 
       </section>
-      <secction class="section player-section">
-        <div class="container">
+      <section class="video">
+        <div class="video__container">
           <h2 class="section__title">Как мы работаем</h2>
-          <div class="player-section__container">
-            <div class="player active">
-              <div class="player__wrapper">
-                 <div id="yt-player" class="player__elem"></div>
-                 <div class="player__splash"></div>
-               </div>
-               <div class="player__controls">
-                 <button class="player__start"></button>
-                 <div class="player__playback">
-                 <button class="player__playback-button"></button>
-               </div>
-               <div class="player__duration">
-                 <span class="player__duration-completed">0:00</span> :
-                 <span class="player__duration-estimate">0:00</span>
-               </div>
-             </div>
-           </div>
-          </div>
+            <div class="video__player">
+                <video id="yt-player" poster="./img/player/cover.png">
+                    <source src="./src/video.mp4" type="video/mp4">
+                </video>
+                <img src="./img/player/Play_white.png" alt="" class="play video__player-img">
+            </div>
+            <div class="video__toolbar">
+                <div class="duration player__start">
+                    <img src="./img/player/Play_gray.png" alt="" class="play duration__img">
+                    <div class="duration player__playback">
+                      <input type="range" class="duration__length" id="durationLevel">
+                    </div>
+                </div>
+                <div class="player__duration">
+                  <span class="player__duration-comleted">0:00</span> :
+                  <span class="player__duration-ectimate">0:00</span>
+                </div>
+            </div>
         </div>
-      </secction>
+    </section>
       <section class="section order-section section--font-color--green">
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
@@ -786,6 +759,9 @@
   <script src="./js/modal.js"></script>
   <script src="./js/menu-acco.js"></script>
   <script src="./js/map.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="./js/player.js"></script>
+
 </body>
 
 </html>
