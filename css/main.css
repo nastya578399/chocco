@@ -1191,6 +1191,7 @@ img {
   border-radius: 50%;
   border: 0.0555555556rem solid transparent;
   display: block;
+  position: relative;
 }
 .fixed-menu__link:before {
   content: "";

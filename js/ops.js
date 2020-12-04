@@ -59,14 +59,14 @@ const scrollViewport = direction => {
 
 $(window).on("wheel", e => {
     const deltaY = e.originalEvent.deltaY;
-
+    console.log(deltaY);
 
     if (deltaY > 0){
         scrollViewport("next");
     }
 
     if (deltaY < 0) {
-        scrollViewport("prerv");
+        scrollViewport("prev");
     }
 });
 
@@ -98,5 +98,7 @@ $("[data-scroll-to]").click(e =>{
     const target = $this.attr("data-scroll-to");
     const reqSection = $(`[data-section-id=${target}]`);
 
-    performTransition(reqSection.index());
+    performTransition(reqSection.index() -1);
+
+    
 })
