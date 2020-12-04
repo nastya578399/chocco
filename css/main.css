@@ -363,8 +363,14 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -1165,6 +1171,11 @@ img {
   top: 20%;
   right: 3%;
   z-index: 100;
+  color: #fff;
+}
+
+.fixed-menu--shadowed {
+  color: #000;
 }
 
 .fixed-menu__item {
@@ -1890,7 +1901,7 @@ img {
 }
 
 .products-menu-section {
-  background: url(/img/products-menu/slider.png) center center/cover no-repeat;
+  background: url(../img/products-menu/slider.png) center center/cover no-repeat;
   background-size: cover;
   position: relative;
   color: #fff;

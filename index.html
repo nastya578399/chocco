@@ -16,32 +16,32 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="section hero">
+      <section data-sidemenu-theme="white" data-section-id="hero" class="section hero">
         <div class="container hero__container">
           <header class="header">
             <a href="#"><img src="./img/logo.png" alt="chocco logo" class="logo"></a>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="" class="menu__link">О нас</a>
+                  <a href="" data-scroll-to="benefits" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Батончики</a>
+                  <a href="" data-scroll-to="product" class="menu__link">Батончики</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Команда</a>
+                  <a href="" data-scroll-to="team" class="menu__link">Команда</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Меню</a>
+                  <a href="" data-scroll-to="products-menu" class="menu__link">Меню</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Отзывы</a>
+                  <a href="" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Как мы работаем</a>
+                  <a href="" data-scroll-to="video" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Контакты</a>
+                  <a href="" data-scroll-to="map" class="menu__link">Контакты</a>
                 </li>
 
               </ul>
@@ -84,7 +84,7 @@
           <div class="hero__title-section">
             <h1 class="hero__main-title">Натуральные шоколадные батончики</h1>
             <div class="hero__title-desk">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
-            <a href="#" class="btn btn--theme--white">Заказать</a>
+            <a href="#" data-scroll-to="order-section" class="btn btn--theme--white">Заказать</a>
           </div>
           <div class="hero__icons-section">
             <ul class="features">
@@ -114,7 +114,7 @@
           </div>
         </div>
       </section>
-      <section class="section benefits-section">
+      <section data-sidemenu-theme="black" data-section-id="benefits"  class="section benefits-section">
           <div class="container">
             <div class="headline">
               <h2 class="section__title headline__title">почему chocco?</h2>
@@ -172,7 +172,7 @@
           </ul>
         </div>
       </section>
-      <section class=" section product-section">
+      <section data-sidemenu-theme="black" data-section-id="product" class=" section product-section">
         <div class="container product__container">
           <div class="slider__controls">
             
@@ -249,7 +249,7 @@
                       <div class="slider__price">
                         <span class="slider__price-amount">140 ₽</span>
                       </div>
-                      <div class="slider__price"><a href="#" class="btn btn--theme--green--all">Заказать</a>
+                      <div class="slider__price"><a href="#" data-scroll-to="order-section" class="btn btn--theme--green--all">Заказать</a>
                       </div>
                     </div>
                 </li>
@@ -320,7 +320,7 @@
                       <div class="slider__price">
                         <span class="slider__price-amount">140 ₽</span>
                       </div>
-                      <div class="slider__price"><a href="#" class="btn btn--theme--green--all">Заказать</a>
+                      <div class="slider__price"><a href="#" data-scroll-to="order-section" class="btn btn--theme--green--all">Заказать</a>
                       </div>
                     </div>
                 </li>
@@ -330,7 +330,7 @@
           </div>
         </div>
       </section>
-      <section class="section team-section">
+      <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
         <div class="container">
           <div class="section__title">Команда</div>
           <ul class="team team--version--dekstor">
@@ -452,7 +452,7 @@
           </ul>
         </div>
       </section>
-      <section class="section products-menu-section">
+      <section data-sidemenu-theme="white" data-section-id="products-menu" class="section products-menu-section">
         <h1 class="section__title products-menu-section__title">Меню</h1>
         <ul class="products-menu">
           <li class="products-menu__item">
@@ -469,7 +469,7 @@
           </li>
         </ul>
       </section>
-      <section class="section reviews-section">
+      <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
         <div class="container">
           <h2 class="section__title reviews__headline">Отзывы</h2>
           <div class="reviews">
@@ -547,14 +547,14 @@
 
 
       </section>
-      <section class="video">
+      <section data-sidemenu-theme="black" data-section-id="video" class="video">
         <div class="video__container">
           <h2 class="section__title">Как мы работаем</h2>
             <div class="video__player">
                 <video id="yt-player" poster="./img/player/cover.png">
                     <source src="./src/video.mp4" type="video/mp4">
                 </video>
-                <img src="./img/player/Play_white.png" alt="" class="play video__player-img">
+                <!-- <img src="./img/player/Play_white.png" alt="" class="play video__player-img"> -->
             </div>
             <div class="video__toolbar">
                 <div class="duration player__start">
@@ -570,7 +570,7 @@
             </div>
         </div>
     </section>
-      <section class="section order-section section--font-color--green">
+      <section data-sidemenu-theme="white" data-section-id="order-section" class="section order-section section--font-color--green">
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
           <form class="form">
@@ -651,10 +651,10 @@
           </form>
         </div>
       </section>
-      <section class="section map-section">
+      <section data-sidemenu-theme="white" data-section-id="map" class="section map-section">
         <div id="map" class="map"></div>
       </section>
-        <footer class="footer">
+        <section data-section-id="footer" class="footer">
           <div class="container footer__container">
             <address class="contacts">
               <div class="contacts__place">
@@ -699,42 +699,39 @@
               </li>
             </ul>
           </div>
-        </footer>
-      
-      
-
-
+        </section>
     </div>
   </div>
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active">
-        <a href="" class="fixed-menu__item"></a>
+        <a href="" data-scroll-to="hero" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__item"></a>
+        <a href="" data-scroll-to="benefit" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__item"></a>
+        <a href="" data-scroll-to="product" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__item"></a>
+        <a href="" data-scroll-to="team"  class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__item"></a>
+        <a href="" data-scroll-to="products-menu"  class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__item"></a>
+        <a href="" data-scroll-to="reviews"  class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__item"></a>
+        <a href="" data-scroll-to="video"  class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__item"></a>
+        <a href="" data-scroll-to="order-section"  class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="" class="fixed-menu__item"></a>
+        <a href="" data-scroll-to="map"  class="fixed-menu__link"></a>
       </li>
+     
     </ul>
   </nav>
   <div id="modal" class="modal">
@@ -761,6 +758,7 @@
   <script src="./js/map.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="./js/player.js"></script>
+  <script src="./js/ops.js"></script>
 
 </body>
 

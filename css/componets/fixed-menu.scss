@@ -2,8 +2,13 @@
     position: fixed;
     top: 20%;
     right: 3%;
-    z-index: $z-fixed-menu;
+    z-index: 100;
+    color: #fff;
 
+}
+
+.fixed-menu--shadowed{
+    color: #000;
 }
 
 .fixed-menu__item{
@@ -22,6 +27,7 @@
     border-radius: 50%;
     border: rem(1px) solid transparent;
     display: block;
+    
 
     &:before {
         content: "";
