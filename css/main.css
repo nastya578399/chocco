@@ -1182,7 +1182,8 @@ img {
   margin-bottom: 0.2777777778rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
-  border-color: #fff;
+  border-color: currentColor;
+  transition: border-color 0.3s;
 }
 
 .fixed-menu__link {
@@ -1199,11 +1200,12 @@ img {
   width: 0.3333333333rem;
   height: 0.3333333333rem;
   border-radius: 50%;
-  background: #fff;
+  background: currentColor;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: background 0.3s;
 }
 
 .contacts {
@@ -1930,21 +1932,47 @@ img {
   height: 100%;
   visibility: visible;
   display: flex;
+  overflow: hidden;
 }
 
 .products-menu__trigger-text {
   display: inline-block;
   text-decoration: none;
-  transform: rotate(-90deg);
-  position: relative;
-  top: 60%;
+  transform: rotate(-180deg);
   font-size: 48px;
+  white-space: nowrap;
+  writing-mode: tb-rl;
+}
+
+.products-menu__trigger {
+  width: 102px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.products-menu__content {
+  background: #0000009c;
+  width: 0;
+}
+
+.products-menu__text {
+  padding: 40px;
+}
+
+.products-menu__item.active .products-menu__content {
+  width: 550px;
 }
 
 .map {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.map-section {
+  position: relative;
 }
 
 .duration {
@@ -2006,9 +2034,17 @@ img {
   flex-direction: column;
 }
 
+.video__iframe {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .video__player {
   position: relative;
   width: 100%;
+  height: 52vh;
   overflow: hidden;
 }
 

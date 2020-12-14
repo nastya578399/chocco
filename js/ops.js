@@ -98,7 +98,7 @@ $("[data-scroll-to]").click(e =>{
     const target = $this.attr("data-scroll-to");
     const reqSection = $(`[data-section-id=${target}]`);
 
-    performTransition(reqSection.index() -1);
+    performTransition(reqSection.index());
 
     
 })

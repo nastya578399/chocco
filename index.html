@@ -458,9 +458,33 @@
           <li class="products-menu__item">
             <a class="products-menu__trigger" href="#" style="background-image: url('./img/products-menu/slide.png')">
               <div class="products-menu__trigger-text">Ботончики с молоком</div></a>
-              <div class="products-menu__content" style="width: 550px;">
+              <div class="products-menu__content">
                 <p class="products-menu__text">
-                  Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.<a class="close-btn" href="#">
+                  Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.<a class="close-btn" href="#"></a>>
+                    <!-- <svg class="close-btn__icon close-btn__icon_color_white">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/img/icon/sprite.svg#close"></use>
+                    </svg></a> -->
+                </p>
+              </div>
+          </li>
+          <li class="products-menu__item">
+            <a class="products-menu__trigger" href="#" style="background-image: url('./img/products-menu/slide.png')">
+              <div class="products-menu__trigger-text">Ботончики с молоком</div></a>
+              <div class="products-menu__content" >
+                <p class="products-menu__text">
+                  Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.<a class="close-btn" href="#"></a>>
+                    <!-- <svg class="close-btn__icon close-btn__icon_color_white">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/img/icon/sprite.svg#close"></use>
+                    </svg></a> -->
+                </p>
+              </div>
+          </li>
+          <li class="products-menu__item">
+            <a class="products-menu__trigger" href="#" style="background-image: url('./img/products-menu/slide.png')">
+              <div class="products-menu__trigger-text">Ботончики с молоком</div></a>
+              <div class="products-menu__content" >
+                <p class="products-menu__text">
+                  Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.<a class="close-btn" href="#"></a>>
                     <!-- <svg class="close-btn__icon close-btn__icon_color_white">
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/img/icon/sprite.svg#close"></use>
                     </svg></a> -->
@@ -551,10 +575,8 @@
         <div class="video__container">
           <h2 class="section__title">Как мы работаем</h2>
             <div class="video__player">
-                <video id="yt-player" poster="./img/player/cover.png">
-                    <source src="./src/video.mp4" type="video/mp4">
-                </video>
-                <!-- <img src="./img/player/Play_white.png" alt="" class="play video__player-img"> -->
+                <div id="yt-player" class="video__iframe" >
+                </div>
             </div>
             <div class="video__toolbar">
                 <div class="duration player__start">
@@ -653,8 +675,7 @@
       </section>
       <section data-sidemenu-theme="white" data-section-id="map" class="section map-section">
         <div id="map" class="map"></div>
-      </section>
-        <section data-section-id="footer" class="footer">
+        <footer class="footer">
           <div class="container footer__container">
             <address class="contacts">
               <div class="contacts__place">
@@ -699,7 +720,9 @@
               </li>
             </ul>
           </div>
-        </section>
+        </footer>        
+      </section>
+        
     </div>
   </div>
   <nav class="fixed-menu">

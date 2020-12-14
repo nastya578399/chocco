@@ -28,13 +28,35 @@
     height: 100%;
     visibility: visible;
     display: flex;
+    overflow: hidden;
 }
 
 .products-menu__trigger-text{
     display: inline-block;
     text-decoration: none;
-    transform: rotate(-90deg);
-    position: relative;
-    top: 60%;
+    transform: rotate(-180deg);
     font-size: 48px;
+    white-space: nowrap;
+    writing-mode: tb-rl;
+}
+
+.products-menu__trigger{
+    width: 102px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.products-menu__content{
+    background: #0000009c;
+    width: 0;
+}
+
+.products-menu__text{
+    padding: 40px;
+}
+
+.products-menu__item.active .products-menu__content{
+    width: 550px;
 }

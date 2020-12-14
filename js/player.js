@@ -14,18 +14,12 @@ let eventsInit = () => {
         
     });
 
-    $(".player__playback").click(e => {
-        const bar = $(e.currentTarget);
-        const clikedPosition = e.originalEvent.layerX;
-        const newInputPositionPercent = (clikedPosition / bar.width()) * 100;
-        const newPlayBackPositionSec =
-         (player.getDuration() / 100) * newInputPositionPercent;
+    $(".duration__lenght").click(e => {
+        const clikedPosition = parseInt(e.currentTarget.value);
 
-        $(".duration__length").css({
-            left: `${newInputPositionPercent}%`
-        });
+        console.log(clikedPosition);
 
-        player.seekTo(newPlayBackPositionSec);
+        player.seekTo(clikedPosition);
         
     });
 
@@ -49,20 +43,18 @@ const formatTime = timeSec => {
 const onPlayerReady = () => {
     let interval;
     const durationSec = player.getDuration();
-
+    $(".duration__lenght").attr({ max: durationSec})
     $(".player__duration-ectimate").text(formatTime(durationSec));
 
-    if(typeof interval !== 'undefined'){
+    if (typeof interval !== 'undefined'){
         clearInterval(interval);
     }
 
     interval = setInterval(() => {
         const completedSec = player.getCurrentTime();
-        const completedPercent = (completedSec / durationSec) * 100;
-
-        $(".duration__length").css({
-            left: `${completedPercent}%`
-        });
+        $(".duration__length").val(
+             `${completedSec}`
+        );
         $(".player__duration-comleted").text(formatTime(completedSec));
     }, 1000);
 }
@@ -91,8 +83,8 @@ const onPlayerStateChange = event => {
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {
       height: '405',
-      width: '660',
-      videoId: 'LXb3EKWsInQ',
+      width: '100%',
+      videoId: 'mVb4a7NuFF8',
       events: {
         'onReady': onPlayerReady,
         'onStateChange': onPlayerStateChange
@@ -109,6 +101,6 @@ function onYouTubeIframeAPIReady() {
     });
   }
 
-
-  eventsInit();
+   
+   eventsInit();
 
